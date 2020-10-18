@@ -1,0 +1,490 @@
+* {
+  margin: 0;
+}
+body {
+  position: relative;
+  background-color: white;
+}
+.right__socialmedia {
+  position: fixed;
+  top: 350px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  background-color: white;
+}
+.right__socialmedia img {
+  padding: 5px;
+  margin-top: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+nav {
+  z-index: 1;
+  position: fixed;
+}
+
+a {
+  text-decoration: none;
+}
+/*Navigation */
+nav .nav-item {
+  display: inline-block;
+  margin: 5px;
+  padding: 0 20px;
+}
+nav .nav-item a {
+  color: white;
+  font-weight: lighter;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.5s ease !important;
+  -webkit-transition: all 0.5s ease !important;
+}
+
+nav .nav-item:first-child {
+  margin-left: 250px;
+}
+nav {
+  height: 80px;
+  background-color: black;
+  align-items: center;
+  display: flex;
+  width: 100vw !important;
+}
+nav a:hover {
+  color: lightgray;
+  cursor: pointer;
+}
+nav button {
+  color: white;
+  border-color: white;
+  background-color: black;
+  padding: 15px 30px;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  border-width: 1px;
+}
+nav button:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+/* home*/
+#home {
+  display: grid;
+  place-content: center;
+  padding-top: 100px;
+}
+#home div {
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  align-items: center;
+}
+#home div h3 {
+  margin-top: 20px;
+  font-family: "Cormorant", serif;
+  font-size: 30px;
+}
+#home div h2 {
+  font-family: "Kite One", sans-serif;
+  font-size: 45px;
+  letter-spacing: 2px;
+}
+#home .home__image img {
+  height: 100vh;
+
+  border-width: 1px solid;
+  width: 60vw;
+  margin-bottom: 100px;
+}
+#home .home__image {
+  height: 90vh;
+  overflow: hidden;
+  border-width: 1px solid;
+  width: 60vw;
+  margin-bottom: 100px;
+}
+/*about*/
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+#about .about__date {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+#about .about__date label {
+  position: absolute;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  top: -20px;
+}
+#about .about__date input {
+  width: 300px;
+  height: 30px;
+}
+#about .about__num {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+#about .about__num label {
+  position: absolute;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  top: -20px;
+}
+#about .about__num input {
+  width: 100px;
+  height: 30px;
+}
+#about button {
+  background-color: black;
+  color: white;
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 10px;
+  padding: 10px 15px;
+  width: 170px;
+}
+#about button:hover {
+  cursor: pointer;
+}
+#about .top {
+  margin-bottom: 100px;
+}
+
+#about .body div {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+#about .body h2 {
+  align-self: center;
+  font-family: "Open Sans", sans-serif;
+  margin: 40px 0;
+  color: rgb(122, 122, 122);
+}
+#about .body p {
+  margin: 50px 0 200px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+}
+/*rooms*/
+#rooms {
+  display: flex;
+  padding-top: 200px;
+  justify-content: center;
+  align-items: center;
+}
+#rooms .rooms__inner {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+  background-color: white;
+  margin-bottom: 100px;
+}
+#rooms .rooms__inner p {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 50px;
+}
+
+#rooms .rooms__inner h2 {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 2px;
+  font-weight: lighter;
+}
+
+#rooms button {
+  margin-top: 50px;
+  color: black;
+  border-color: black;
+  background-color: white;
+  padding: 10px 30px;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  border-width: 1px;
+}
+#rooms button:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+#rooms .rooms__outer {
+  padding: 100px 300px;
+  background-image: url("./images/motel-big.jpg");
+  background-position: center;
+  background-size: cover;
+}
+/*services*/
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding-top: 70px;
+}
+#services h2 {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 100px;
+  color: rgb(158, 154, 154);
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+#services .services__component {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 250px;
+}
+#services .services__component h3 {
+  font-family: "Open Sans", sans-serif;
+  margin: 10px 0 15px;
+}
+#services .services__component p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+#services .services__cover {
+  display: flex;
+  flex-direction: column;
+}
+#services .services__upper {
+  display: flex;
+  margin-top: 50px;
+}
+#services .services__lower {
+  display: flex;
+  padding-bottom: 50px;
+}
+/*gallery*/
+#gallery {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 150px;
+}
+#gallery .gallery__cover {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+#gallery .gallery__cover h2 {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(158, 154, 154);
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+#gallery .gallery__images {
+  display: flex;
+  margin-top: 50px;
+}
+#gallery .gallery__image {
+  height: 650px;
+  width: 300px;
+  margin-right: 20px;
+}
+/*see and do*/
+#seeanddo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding-top: 70px;
+}
+#seeanddo h2 {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 100px;
+  color: rgb(158, 154, 154);
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+#seeanddo .services__component {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 250px;
+}
+#seeanddo .services__component h3 {
+  font-family: "Open Sans", sans-serif;
+  margin: 10px 0 20px;
+}
+#seeanddo .services__component p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+#seeanddo .services__cover {
+  display: flex;
+  flex-direction: column;
+}
+#seeanddo .services__upper {
+  display: flex;
+  margin-top: 50px;
+}
+#seeanddo .services__lower {
+  display: flex;
+  padding-bottom: 150px;
+}
+/*see and do -- used the rooms section styling */
+#rooms-copy {
+  display: flex;
+  padding-top: 200px;
+  justify-content: center;
+  align-items: center;
+}
+#rooms-copy .rooms__inner {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+  background-color: white;
+  margin-bottom: 100px;
+}
+#rooms-copy .rooms__inner p {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 50px;
+}
+
+#rooms-copy .rooms__inner h2 {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 2px;
+  font-weight: lighter;
+}
+
+#rooms-copy .rooms__outer {
+  padding: 100px 300px;
+  background-image: url("./images/motel-big.jpg");
+  background-position: center;
+  background-size: cover;
+}
+/*contact*/
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 100px 0 200px;
+}
+#contact .contact__cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact .contact__cover span {
+  margin-left: 100px;
+}
+#contact .contact__cover h2 {
+  padding: 50px;
+  font-family: "Open Sans", sans-serif;
+}
+#contact .contact__cover p {
+  padding: 50px 0 100px;
+  font-family: "Open Sans", sans-serif;
+}
+#contact .contact__cover input {
+  height: 30px;
+  width: 327px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+}
+#contact .contact__cover input.form__subject {
+  width: 663px;
+}
+
+#contact .contact__cover .contact-btn {
+  width: 662px;
+  height: 45px;
+  font-family: "Open Sans", sans-serif;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+/*slideshow*/
+#gallary .gallery__image {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides1 {
+  display: none;
+  transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
